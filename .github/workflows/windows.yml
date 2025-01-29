@@ -1,0 +1,25 @@
+name: Build Windows
+
+on: 
+  #push
+  #pull_request
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build app for release
+        working-directory: CodeSignCpp
+        run: msbuild /property:Configuration=Release /property:Platform=x64
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-windows
+          path: CodeSignCpp/bin/Release-x64
