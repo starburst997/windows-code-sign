@@ -371,6 +371,8 @@ Once the action has finished running, you can see the uploaded artifact and down
 
 See the result for yourself: [Signed](https://cdn.notessimo.com/misc/codesign/CodeSignCpp.exe) / [Unsigned](https://cdn.notessimo.com/misc/codesign/CodeSignCpp-unsigned.exe)
 
+Immediate [SmartScreen](https://en.wikipedia.org/wiki/Microsoft_SmartScreen) reputation as well! Which is something that even some of the expensive code signing certificates don't supply.
+
 <br/>
 
 ## Conclusion
