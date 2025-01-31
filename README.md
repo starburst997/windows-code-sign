@@ -59,11 +59,11 @@ You should have a default Subscription / Tenant (if not, you didn't fill the for
 ### Register the Trusted Signing resource provider
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" alt="Search for Subscriptions" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" alt="Search for Subscriptions" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" alt="Select Resource providers" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" alt="Select Resource providers" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" alt="Register CodeSigning" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" alt="Register CodeSigning" height="176"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Subscriptions** service, click on your subscription.
@@ -115,11 +115,11 @@ Repeat for the second role.
 ### Create an identity validation request
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" alt="Create account" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" alt="Create account" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" alt="Fill form" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" alt="Fill form" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" alt="Au10tix" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" alt="Au10tix" height="176"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select your account.
@@ -161,11 +161,11 @@ You are now ready to sign your first application!
 ### Note some values
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" alt="Trusted Signing account" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" alt="Trusted Signing account" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" alt="Certificate profile" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" alt="Certificate profile" height="176"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" alt="Tenant ID" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" alt="Tenant ID" height="176"/></a>
 </td></tr></table>
 
 First, we need to takes note of a few variables, copy your **Trusted Signing account** name you used earlier (also take note of the **Location**) and the **Certificate profile** name as well.
