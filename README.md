@@ -25,9 +25,9 @@ Finally, [Microsoft recently launched](https://techcommunity.microsoft.com/blog/
 Ever saw a [scary warning](https://en.wikipedia.org/wiki/Microsoft_SmartScreen) while downloading a EXE?
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_5.png" alt="Scary Warning 1" title="Scary Warning 1" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/warning_5.png" alt="Scary Warning 1" title="Scary Warning 1"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_3.png" alt="Scary Warning 2" title="Scary Warning 2" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/warning_3.png" alt="Scary Warning 2" title="Scary Warning 2"/></a>
 </td></tr></table>
 
 This is because the application is **NOT** code signed. This is an awful experience for anyone trying to download something and as a developer, is gut wrenching to feel powerless to remove this barrier without caving in to the Certificates Mafia Monopoly.
@@ -45,7 +45,7 @@ Linux doesn't have any of that *(in the context of scary popup from downloading 
 ## Setup code signing in Azure
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/azure.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/azure.png" alt="Sign up for Azure" title="Sign up for Azure" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/azure.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/azure.png" alt="Sign up for Azure" title="Sign up for Azure"/></a>
 </td></tr></table>
 
 [Create an account](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account) (new account come with free credits) and sign in to the [Azure portal](https://portal.azure.com/).
@@ -59,11 +59,11 @@ You should have a default Subscription / Tenant (if not, you didn't fill the for
 ### Register the Trusted Signing resource provider
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" alt="Search for Subscriptions" title="Search for Subscriptions" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/provider_1.png" alt="Search for Subscriptions" title="Search for Subscriptions" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" alt="Select Resource providers" title="Select Resource providers" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/provider_2.png" alt="Select Resource providers" title="Select Resource providers" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" alt="Register CodeSigning" title="Register CodeSigning" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/provider_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/provider_3.png" alt="Register CodeSigning" title="Register CodeSigning" /></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Subscriptions** service, click on your subscription.
@@ -77,9 +77,9 @@ Search for **Microsoft.CodeSigning**, click on "..." and select **Register**.
 ### Create a Trusted Signing account
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_1.png" alt="Create account" title="Create account" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/account_1.png" alt="Create account" title="Create account"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_2.png" alt="Fill info" title="Fill info" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/account_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/account_2.png" alt="Fill info" title="Fill info"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and **Create** one.
@@ -91,13 +91,13 @@ Fill the form by selecting your **Subscription**, select **Create new** for **Re
 ### Assign roles
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" title="Select account" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_1.png" alt="Select account" title="Select account"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" title="Add role assignment" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_2.png" alt="Add role assignment" title="Add role assignment"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" title="Select role" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_3.png" alt="Select role" title="Select role"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" alt="Add member" title="Add member" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_4.png" alt="Add member" title="Add member"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select the account you just created.
@@ -115,11 +115,11 @@ Repeat for the second role.
 ### Create an identity validation request
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" alt="Create account" title="Create account" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/identity_1.png" alt="Create account" title="Create account"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" alt="Fill form" title="Fill form" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/identity_2.png" alt="Fill form" title="Fill form"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" alt="Au10tix" title="Au10tix" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/identity_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/identity_3.png" alt="Au10tix" title="Au10tix"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select your account.
@@ -139,9 +139,9 @@ Once this is done, it takes around 5-10 minutes before the status changes to **C
 ### Create a Certificate profile
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_1.png" alt="Create certificate" title="Create certificate" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/certicate_1.png" alt="Create certificate" title="Create certificate" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_2.png" alt="Fill form" title="Fill form" height="200"/>  </a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/certicate_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/certicate_2.png" alt="Fill form" title="Fill form"/>  </a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select your account.
@@ -161,11 +161,11 @@ You are now ready to sign your first application!
 ### Note some values
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" alt="Trusted Signing account" title="Trusted Signing account" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/local_1.png" alt="Trusted Signing account" title="Trusted Signing account" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" alt="Certificate profile" title="Certificate profile" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/local_2.png" alt="Certificate profile" title="Certificate profile"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" alt="Tenant ID" title="Tenant ID" height="176"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/local_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/local_3.png" alt="Tenant ID" title="Tenant ID"/></a>
 </td></tr></table>
 
 First, we need to takes note of a few variables, copy your **Trusted Signing account** name you used earlier (also take note of the **Location**) and the **Certificate profile** name as well.
@@ -241,13 +241,13 @@ Now that everything works locally, we can easily automate the code signing steps
 ### Create an App
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" alt="App registrations" title="App registrations" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_1.png" alt="App registrations" title="App registrations"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" alt="Certificate profile" title="Certificate profile" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_2.png" alt="Certificate profile" title="Certificate profile"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" alt="Copy Client ID" title="Copy Client ID" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_5.png" alt="Copy Client ID" title="Copy Client ID" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" alt="Create secret" title="Create secret" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_4.png" alt="Create secret" title="Create secret" /></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **App registrations** service and click on **New registration**.
@@ -265,13 +265,13 @@ Select **Manage** / **Certificates & secrets** and click on **New client secret*
 ### Assign roles
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" title="Select account" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_1.png" alt="Select account" title="Select account"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" title="Add role assignment" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_2.png" alt="Add role assignment" title="Add role assignment" /></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" title="Select role" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/role_3.png" alt="Select role" title="Select role"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" alt="Search for app" title="Search for app" height="127"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_3.png" alt="Search for app" title="Search for app"/></a>
 </td></tr></table>
 
 We also need to add the **Trusted Signing Certificate Profile Signer** role to the app just like we did on our user.
@@ -287,9 +287,9 @@ Search for **Trusted Signing Certificate Profile Signer**, go **Next**, click on
 ### Create GIT repository
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_7.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_7.png" alt="Create repository" title="Create repository" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_7.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_7.png" alt="Create repository" title="Create repository"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_6.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_6.png" alt="Secrets" title="Secrets" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_6.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_6.png" alt="Secrets" title="Secrets"/></a>
 </td></tr></table>
 
 Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign-test) which includes a basic C++ application.
@@ -360,9 +360,9 @@ Thanks to the [azure/trusted-signing-action](https://github.com/azure/trusted-si
 ### Run the action
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_8.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_8.png" alt="Start action" title="Start action" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_8.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_8.png" alt="Start action" title="Start action"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_9.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_9.png" alt="Download artifact" title="Download artifact" height="200"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_9.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_9.png" alt="Download artifact" title="Download artifact"/></a>
 </td></tr></table>
 
 You can then start the action by going to the **Actions** tabs, selecting your action (**Build Windows**) and click on **Run workflow**.
