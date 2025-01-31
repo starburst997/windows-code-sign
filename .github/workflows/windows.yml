@@ -2,7 +2,6 @@ name: Build Windows
 
 on: 
   #push
-  #pull_request
   workflow_dispatch:
 
 jobs:
@@ -28,7 +27,7 @@ jobs:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
           azure-client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-          endpoint: https://eus.codesigning.azure.net/
+          endpoint: ${{ secrets.AZURE_ENDPOINT }}
           trusted-signing-account-name: ${{ secrets.AZURE_SIGNING_ACCOUNT }}
           certificate-profile-name: ${{ secrets.AZURE_SIGNING_CERTIFICATE }}
           files-folder: ${{ github.workspace }}\CodeSignCpp\bin\Release-x64
