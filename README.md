@@ -84,7 +84,7 @@ Search for **Microsoft.CodeSigning**, click on "..." and select **Register**.
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and **Create** one.
 
-Fill the form by selecting your **Subscription**, select **Create new** for **Resource group** (use any name you want). Pick an **Account name** (any name you want), a **Region** and finally a **Pricing tier** (at the time of writing, it seems like the 9.99$ is actually *free* for individual developer for the preview period).
+Fill the form by selecting your **Subscription**, select **Create new** for **Resource group** (use any name you want). Pick an **Account name** (any name you want), a **Region** and finally a **Pricing tier** (at the time of writing, it seems like the 9.99$ is actually *free\** for individual developer for the preview period).
 
 <br/>
 
