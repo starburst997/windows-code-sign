@@ -282,12 +282,14 @@ Now that everything works locally, we can easily automate the code signing steps
 </td></tr></table>
 
 1. We also need to add the **Trusted Signing Certificate Profile Signer** role to the app just like we did on our user.
+<br/><br/>
+In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select your account.
 
-2. In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select your account.
+2. On the left panel select **Access Control (IAM)** and pick **Add** / **Add role assignment**.
 
-3. On the left panel select **Access Control (IAM)** and pick **Add** / **Add role assignment**.
+3. Search for **Trusted Signing Certificate Profile Signer**, go **Next**
 
-4. Search for **Trusted Signing Certificate Profile Signer**, go **Next**, click on **+ Select members**, search for your App name (it won't show up by default) and click **Review + assign**.
+4. Click on **+ Select members**, search for your App name (it won't show up by default) and click **Review + assign**.
 
 <br/>
 
@@ -301,16 +303,13 @@ Now that everything works locally, we can easily automate the code signing steps
 
 1. Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign-test) which includes a basic C++ application.
 
-2. Add these 6 secrets to your repository (**Settings** / **Security** / **Secrets and variables** / **Actions**, click **New repository secret**). *(do not include quotes)*
-<br/><br/>
-```sh
-AZURE_CLIENT_ID = "Your app client ID"
-AZURE_CLIENT_SECRET = "Your app secret value"
-AZURE_SIGNING_ACCOUNT = "Your Trusted Signing Accounts name"
-AZURE_SIGNING_CERTIFICATE = "Your Certificate profile name"
-AZURE_TENANT_ID = "Your Tenant ID"
-AZURE_ENDPOINT = "https://eus.codesigning.azure.net/"
-```
+2. Add these 6 secrets to your repository (**Settings** / **Security** / **Secrets and variables** / **Actions**, click **New repository secret**).
+   - `AZURE_CLIENT_ID`: `Your app client ID`
+   - `AZURE_CLIENT_SECRET`: `Your app secret value`
+   - `AZURE_SIGNING_ACCOUNT`: `Your Trusted Signing Accounts name`
+   - `AZURE_SIGNING_CERTIFICATE`: `Your Certificate profile name`
+   - `AZURE_TENANT_ID`: `Your Tenant ID`
+   - `AZURE_ENDPOINT`: `https://eus.codesigning.azure.net/`
 
 <br/>
 
