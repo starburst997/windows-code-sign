@@ -1,2 +1,3 @@
-# code-sign-test
-Testing code signing with a simple C# app
+# windows-code-sign-test
+
+Testing code signing with a simple C++ app
