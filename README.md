@@ -181,7 +181,7 @@ You are now ready to sign your first application!
 
 ### Install SignTool
 
-For the next steps, I used [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5), makes sure you are also up-to-date with [**dotnet**](https://dotnet.microsoft.com/en-us/download/dotnet) (8+).
+For the next steps, I used [**PowerShell 7**](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5), makes sure you are also up-to-date with [**dotnet**](https://dotnet.microsoft.com/en-us/download/dotnet) (8+).
 
 Install the [**Trusted Signing Tools**](https://download.microsoft.com/download/6d9cb638-4d5f-438d-9f21-23f0f4405944/TrustedSigningClientTools.msi) / [**Azure CLI**](https://aka.ms/installazurecliwindowsx64) via winget (or via installer)
 
@@ -375,6 +375,8 @@ Thanks to the [azure/trusted-signing-action](https://github.com/azure/trusted-si
 1. You can then start the action by going to the **Actions** tabs, selecting your action (**Build Windows**) and click on **Run workflow**.
 
 2. Once the action has finished running, you can see the uploaded artifact and download your signed application!
+
+<br/>
 
 See the result for yourself: [Signed](https://cdn.notessimo.com/misc/codesign/CodeSignCpp.exe) / [Unsigned](https://cdn.notessimo.com/misc/codesign/CodeSignCpp-unsigned.exe)
 
