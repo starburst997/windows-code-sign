@@ -6,7 +6,7 @@ The following text is a copy of my blog post: [**Code Signing for Windows as an 
 
 <br/>
 
-(*TLDR; Get code signing working for Windows for free\* via Github Action, check this repository to see how simple it can get once everything is setup*)
+(*TLDR; Get code signing working for Windows for free\* with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup*)
 
 <br/>
 
@@ -22,7 +22,7 @@ Finally, [Microsoft recently launched](https://techcommunity.microsoft.com/blog/
 
 ## What is Code Signing
 
-Ever saw a scary warning while downloading a EXE?
+Ever saw a [scary warning](https://en.wikipedia.org/wiki/Microsoft_SmartScreen) while downloading a EXE?
 
 <table align="center"><tr><td>
 <a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/warning_5.png" alt="Scary Warning 1" height="200"/></a>
