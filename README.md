@@ -304,12 +304,12 @@ In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing A
 1. Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign-test) which includes a basic C++ application.
 
 2. Add these 6 secrets to your repository (**Settings** / **Security** / **Secrets and variables** / **Actions**, click **New repository secret**).
-   - `AZURE_CLIENT_ID: Your app client ID`
-   - `AZURE_CLIENT_SECRET: Your app secret value`
-   - `AZURE_SIGNING_ACCOUNT: Your Trusted Signing Accounts name`
-   - `AZURE_SIGNING_CERTIFICATE: Your Certificate profile name`
-   - `AZURE_TENANT_ID: Your Tenant ID`
-   - `AZURE_ENDPOINT: https://eus.codesigning.azure.net/`
+   - `AZURE_CLIENT_ID`: `Your app client ID`
+   - `AZURE_CLIENT_SECRET`: `Your app secret value`
+   - `AZURE_SIGNING_ACCOUNT`: `Your Trusted Signing Accounts name`
+   - `AZURE_SIGNING_CERTIFICATE`: `Your Certificate profile name`
+   - `AZURE_TENANT_ID`: `Your Tenant ID`
+   - `AZURE_ENDPOINT`: `https://eus.codesigning.azure.net/`
 
 <br/>
 
