@@ -91,13 +91,13 @@ Fill the form by selecting your **Subscription**, select **Create new** for **Re
 ### Assign roles
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" alt="Add member" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_4.png" alt="Add member" height="127"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and select the account you just created.
@@ -241,13 +241,13 @@ Now that everything works locally, we can easily automate the code signing steps
 ### Create an App
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" alt="App registrations" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_1.png" alt="App registrations" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" alt="Certificate profile" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_2.png" alt="Certificate profile" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" alt="Copy Client ID" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_5.png" alt="Copy Client ID" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" alt="Create secret" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_4.png" alt="Create secret" height="127"/></a>
 </td></tr></table>
 
 In the [Azure portal](https://portal.azure.com/), search for **App registrations** service and click on **New registration**.
@@ -265,13 +265,13 @@ Select **Manage** / **Certificates & secrets** and click on **New client secret*
 ### Assign roles
 
 <table align="center"><tr><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_1.png" alt="Select account" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_2.png" alt="Add role assignment" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/role_3.png" alt="Select role" height="127"/></a>
 </td><td>
-<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" alt="Search for app" height="159"/></a>
+<a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_3.png" alt="Search for app" height="127"/></a>
 </td></tr></table>
 
 We also need to add the **Trusted Signing Certificate Profile Signer** role to the app just like we did on our user.
