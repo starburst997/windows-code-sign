@@ -6,7 +6,7 @@ The following text is a copy of my blog post: [**Code Signing for Windows as an 
 
 <br/>
 
-(*TLDR; Get code signing working for Windows for free\* with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup*)
+(*TLDR; Get code signing working for Windows with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup*)
 
 <br/>
 
@@ -84,7 +84,7 @@ You should have a default Subscription / Tenant (if not, you didn't fill the for
 
 1. In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing Accounts** service and **Create** one.
 
-2. Fill the form by selecting your **Subscription**, select **Create new** for **Resource group** (use any name you want). Pick an **Account name** (any name you want), a **Region** and finally a **Pricing tier** (at the time of writing, it seems like the 9.99$ is actually *free\** for individual developer for the preview period).
+2. Fill the form by selecting your **Subscription**, select **Create new** for **Resource group** (use any name you want). Pick an **Account name** (any name you want), a **Region** and finally a **Pricing tier**.
 
 <br/>
 
