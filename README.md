@@ -8,6 +8,8 @@ The following text is a copy of my blog post: [**Code Signing for Windows as an 
 
 *(**TL;DR**: Get code signing working for Windows with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup)*
 
+*(Part one of my series on code-signing / distributing apps, check [Part 2 on Apple](https://github.com/starburst997/apple-code-sign))*
+
 <br/>
 
 ## Introduction
