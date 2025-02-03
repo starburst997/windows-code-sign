@@ -1,4 +1,4 @@
-# windows-code-sign-test
+# windows-code-sign
 
 Testing code signing with a simple C++ app via Github Action and Azure's [Trusted Signing](https://techcommunity.microsoft.com/blog/microsoft-security-blog/trusted-signing-is-now-open-for-individual-developers-to-sign-up-in-public-previ/4273554) .
 
@@ -6,7 +6,7 @@ The following text is a copy of my blog post: [**Code Signing for Windows as an 
 
 <br/>
 
-(*TLDR; Get code signing working for Windows with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup*)
+*(**TL;DR**: Get code signing working for Windows with immediate SmartScreen reputation via Github Action, check this repository to see how simple it can get once everything is setup)*
 
 <br/>
 
@@ -301,7 +301,7 @@ In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing A
 <a href="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/gh_6.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-01-29-code-signing/small/gh_6.png" alt="Secrets" title="Secrets"/></a><p align="center">2</p>
 </td></tr></table>
 
-1. Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign-test) which includes a basic C++ application.
+1. Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign) which includes a basic C++ application.
 
 2. Add these 6 secrets to your repository (**Settings** / **Security** / **Secrets and variables** / **Actions**, click **New repository secret**).
    - `AZURE_CLIENT_ID`: `Your app client ID`
@@ -315,7 +315,7 @@ In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing A
 
 ### Create worflow file
 
-Create a workflow file in your repository ([**.github/workflows/windows.yml**](https://github.com/starburst997/windows-code-sign-test/blob/main/.github/workflows/windows.yml))
+Create a workflow file in your repository ([**.github/workflows/windows.yml**](https://github.com/starburst997/windows-code-sign/blob/main/.github/workflows/windows.yml))
 
 ```yaml
 name: Build Windows
