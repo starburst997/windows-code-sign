@@ -9,36 +9,34 @@ on:
         description: Release Notes
 
 jobs:
+  version: # Get current version
+    uses: starburst997/yearly-version/.github/workflows/version.yml@v1
+    secrets: inherit
+
+  version_increment: # Increment only if release is successful
+    uses: starburst997/yearly-version/.github/workflows/version.yml@v1
+    needs: [release]
+    secrets: inherit
+    with:
+      increment: true
+
   build-windows:
     uses: ./.github/workflows/windows.yml
+    needs: [version]
     secrets: inherit
 
   release:
     name: Release
     runs-on: ubuntu-latest
-    needs: [build-windows]
+    needs: [version, build-windows]
     steps:
-      - name: Increment Version
-        uses: starburst997/increment@v2
-        with:
-          name: 'VERSION'
-          amount: 1
-          token: ${{ secrets.GH_PAT }}
-
-      - name: Set YEAR
-        run: echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
-      - run: echo Year is $YEAR
-
-      - name: Print version
-        run: echo Version = $YEAR.${{ vars.VERSION }}
-
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT }}
       
       - name: Tag release
         run: |
-          git tag v$YEAR.${{ vars.VERSION }}
+          git tag v${{ needs.version.outputs.version }}
           git push origin --tags
 
       - name: Generate Changelog
@@ -60,7 +58,7 @@ jobs:
         with:
           body_path: RELEASE.txt
           token: ${{ secrets.GH_PAT }}
-          tag_name: v${{ env.YEAR }}.${{ vars.VERSION }}
+          tag_name: v${{ needs.version.outputs.version }}
           files: |
             windows/CodeSignCpp-unsigned.exe
             windows/CodeSignCpp.exe
