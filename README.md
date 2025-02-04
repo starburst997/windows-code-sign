@@ -306,12 +306,34 @@ In the [Azure portal](https://portal.azure.com/), search for **Trusted Signing A
 1. Create your git repository on [Github](https://github.com/new), or clone my [sample repository](https://github.com/starburst997/windows-code-sign) which includes a basic C++ application.
 
 2. Add these 6 secrets to your repository (**Settings** / **Security** / **Secrets and variables** / **Actions**, click **New repository secret**).
-   - `AZURE_CLIENT_ID`: `Your app client ID`
-   - `AZURE_CLIENT_SECRET`: `Your app secret value`
-   - `AZURE_SIGNING_ACCOUNT`: `Your Trusted Signing Accounts name`
-   - `AZURE_SIGNING_CERTIFICATE`: `Your Certificate profile name`
-   - `AZURE_TENANT_ID`: `Your Tenant ID`
-   - `AZURE_ENDPOINT`: `https://eus.codesigning.azure.net/`
+   - `AZURE_CLIENT_ID`: Your app client ID
+   - `AZURE_CLIENT_SECRET`: Your app secret value
+   - `AZURE_SIGNING_ACCOUNT`: Your Trusted Signing Accounts name
+   - `AZURE_SIGNING_CERTIFICATE`: Your Certificate profile name
+   - `AZURE_TENANT_ID`: Your Tenant ID
+   - `AZURE_ENDPOINT`: https://eus.codesigning.azure.net/
+
+*(Save those variables inside a Password Manager for re-use in future projects as they won't change)*
+
+<br/>
+
+### Generate a Personal Access Token (PAT)
+
+<table align="center"><tr><td>
+<a href="https://jd.boiv.in/assets/posts/2025-02-02-code-signing-apple/pat_01.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-02-02-code-signing-apple/small/pat_01.png" alt="Generate New Token (Classic)" title="Generate New Token (Classic)" /></a><p align="center">1</p>
+</td><td>
+<a href="https://jd.boiv.in/assets/posts/2025-02-02-code-signing-apple/pat_02.png" target="_blank"><img src="https://jd.boiv.in/assets/posts/2025-02-02-code-signing-apple/small/pat_02.png" alt="Use repo score" title="Use repo score"/></a><p align="center">2</p>
+</td></tr></table>
+
+*(Optional)* We also need to generate a **Personal Access Token** for Github if you want to test the sample **Release** workflow. 
+
+1. Visit your [settings page](https://github.com/settings/tokens) and click on **Generate new token** and select **Generate new token (classic)**.
+
+2. We need all the **repo** scope enabled. Set **no expiration**. Click **Generate token** and save the value.
+
+Save this secret in the github repository for your project:
+
+- `GH_PAT`: The value of your newly generated token
 
 <br/>
 
