@@ -49,16 +49,6 @@ jobs:
           path: windows
 
       - name: Release
-        uses: starburst997/action-gh-release@v2
-        with:
-          body_path: RELEASE.txt
-          token: ${{ secrets.GH_PAT }}
-          tag_name: v${{ needs.version.outputs.version }}
-          files: |
-            windows/CodeSignCpp-unsigned.exe
-            windows/CodeSignCpp.exe
-
-      - name: Release
         uses: starburst997/release-action@v1
         with:
           bodyFile: RELEASE.txt
