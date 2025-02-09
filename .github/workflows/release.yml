@@ -63,6 +63,16 @@ jobs:
             windows/CodeSignCpp-unsigned.exe
             windows/CodeSignCpp.exe
 
+      - name: Release
+        uses: starburst997/release-action@v1
+        with:
+          bodyFile: RELEASE.txt
+          token: ${{ secrets.GH_PAT }}
+          tag: v${{ needs.version.outputs.version }}
+          replacesArtifacts: true
+          allowUpdates: true
+          artifacts: "windows/*"
+
       - name: Cleanup to avoid storage limit
         if: always()
         uses: starburst997/delete-artifact@v5
