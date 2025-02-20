@@ -412,3 +412,11 @@ Immediate [SmartScreen](https://en.wikipedia.org/wiki/Microsoft_SmartScreen) rep
 I am really glad Microsoft finally made it easy and affordable to code sign EXE on Windows, hopefully they will keep the price low for individual developer. Now, any new project I do, I can simply copy / paste the secrets into the new repository, copy the workflow file and be setup with code signing in just a few seconds.
 
 <br/>
+
+Code-signing / distributing app series:
+- [Code Signing for Windows as an Individual Developer](https://github.com/starburst997/windows-code-sign)
+- [Code Signing for Apple without a mac](https://github.com/starburst997/apple-code-sign)
+- [Code Signing for Android via Github Actions](https://github.com/starburst997/android-code-sign)
+- [Build and publish your Unity Game using Github Actions](https://github.com/starburst997/windows-code-sign)
+
+<br/>
