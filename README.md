@@ -414,9 +414,9 @@ I am really glad Microsoft finally made it easy and affordable to code sign EXE 
 <br/>
 
 Code-signing / distributing app series:
-- [Code Signing for Windows as an Individual Developer](https://github.com/starburst997/windows-code-sign)
-- [Code Signing for Apple without a mac](https://github.com/starburst997/apple-code-sign)
-- [Code Signing for Android via Github Actions](https://github.com/starburst997/android-code-sign)
-- [Build and publish your Unity Game using Github Actions](https://github.com/starburst997/windows-code-sign)
+- Part 1: [Code Signing for Windows as an Individual Developer](https://github.com/starburst997/windows-code-sign)
+- Part 2: [Code Signing for Apple without a mac](https://github.com/starburst997/apple-code-sign)
+- Part 3: [Code Signing for Android via Github Actions](https://github.com/starburst997/android-code-sign)
+- Part 4: [Build and publish your Unity Game using Github Actions](https://github.com/starburst997/windows-code-sign)
 
 <br/>
